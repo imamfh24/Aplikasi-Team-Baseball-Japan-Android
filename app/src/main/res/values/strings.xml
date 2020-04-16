@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Team Baseball Japan</string>
+    <string name="about">About</string>
+    <string name="salam">السَّلاَمُ عَلَيْكُمْ</string>
+    <string name="uin_suska_riau_pekanbaru">UIN SUSKA RIAU PEKANBARU</string>
+    <string name="nama_perguruan_tinggi">Nama Perguruan Tinggi</string>
+    <string name="mahasiswa">MAHASISWA</string>
+    <string name="status">Status</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="imam_faried_helmi">IMAM FARIED HELMI</string>
+</resources>

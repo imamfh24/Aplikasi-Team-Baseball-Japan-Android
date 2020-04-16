@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BaseballActivity">
+
+    <ImageView
+        android:id="@+id/logos"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        tools:src="@android:color/darker_gray"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="2sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/teams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="NAMA TEAM"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/desk"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+
+                    android:justificationMode="inter_word"
+                    android:textColor="@android:color/black"
+                    android:text="DESK TEAM" />
+
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="1dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="7sp"
+                    android:layout_marginLeft="7sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/desk2"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:layout_marginRight="5sp"
+                    android:textColor="@android:color/black"
+                    android:text="DESK TEAM"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEAM ROSTER"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:layout_marginBottom="2sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manager"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:layout_marginBottom="5sp"/>
+
+            <TextView
+                android:id="@+id/manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:text="manager"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:background="@android:color/black"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Catcher -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Catcher"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="5sp"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pemain"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Lahir"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tinggi"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="B"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5sp"
+                    android:background="@android:color/black"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/no_catcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/nama_catcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pemain"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="7sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tgl_catcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Tgl Lahir"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="5sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/berat_catcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tinggi_cathcer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tinggi"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/t_catcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5sp"
+                        android:text="T"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/b_catcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+
+                        android:fontFamily="sans-serif"
+                        android:text="B"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <!-- Pitcher -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:background="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pitcher"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="No"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pemain"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Lahir"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tinggi"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:text="B"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5sp"
+                    android:background="@android:color/black"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/no_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/nama_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Nama Pemain"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="7sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tgl_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Tgl Lahir"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="5sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/berat_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tinggi_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tinggi"
+                        android:layout_marginRight="5sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/t_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5sp"
+                        android:fontFamily="sans-serif"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/b_pitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="B"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <!-- Infielder -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:background="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Infielder"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pemain"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Lahir"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Tinggi"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:text="B"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5sp"
+                    android:background="@android:color/black"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/no_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/nama_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Nama Pemain"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="7sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tgl_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Tgl Lahir"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="5sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/berat_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Berat"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tinggi_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Tinggi"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/t_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/b_infielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12sp"
+                        android:text="B"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <!-- Outfielder -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:background="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Outfielder"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:layout_marginRight="5sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Nama Pemain"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Lahir"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tinggi"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:text="B"
+                        android:textColor="@android:color/black"/>
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5sp"
+                    android:background="@android:color/black"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/no_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="5sp"
+                        android:text="No"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="5sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/nama_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Nama Pemain"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="7sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tgl_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Lahir"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="5sp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/berat_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"
+                        android:layout_marginRight="5sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tinggi_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tinggi"
+                        android:layout_marginRight="5sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/t_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5sp"
+                        android:fontFamily="sans-serif"
+                        android:text="T"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/b_outfielder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif"
+                        android:text="B"
+                        android:textColor="@android:color/black"/>
+
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@android:color/black"/>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
